@@ -1,0 +1,38 @@
+.one {
+    color: $logo-1;
+}
+
+.two {
+    color: $logo-2;
+}
+
+.three {
+    color: $logo-3;
+}
+
+.four {
+    color: $logo-4;
+}
+
+.exclaim {
+    display: inline-block;
+    font-size: 2.5rem;
+    transform: rotate(12deg);
+    @include mq(768px) {
+        font-size: 5rem;
+    }
+}
+
+.offscreen {
+    position: absolute;
+    left: -100000px;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
