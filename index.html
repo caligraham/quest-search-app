@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <title>Quest</title>
 </head>
 <body>
@@ -14,8 +18,42 @@
             <div class="logo" ariea-hidden="true">
                 Quest
             </div>
-            <form id="searchBar"></form>
+            <form id="searchBar" class="searchBar">
+                <label class="offscreen" for="search">Enter a search term or phrase</label>
+                <input id="search" type="text" autocomplete="off" />
+                <div id-="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fab fa-searchengin"></i>
+                </button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Dachsund</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultsImage">
+                            <img src="" alt="Dachsund">
+                        </div>
+                            <div class="resultText">
+                                <p class="resultDescription"></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
 </body>
 </html>
